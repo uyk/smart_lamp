@@ -1,0 +1,30 @@
+{
+  "name": "smart_lamp",
+  "version": "1.0.0",
+  "description": "smart lamp project",
+  "main": "index.js",
+  "dependencies": {
+    "body-parser": "^1.16.1",
+    "child_process": "^1.0.2",
+    "express": "^4.14.1",
+    "fs": "0.0.1-security",
+    "go": "^0.0.1-security",
+    "python-shell": "^0.4.0",
+    "request": "^2.79.0",
+    "rpio": "^0.9.15"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/uyk/smart_lamp.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/uyk/smart_lamp/issues"
+  },
+  "homepage": "https://github.com/uyk/smart_lamp#readme"
+}
