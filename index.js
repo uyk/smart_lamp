@@ -4,6 +4,7 @@ var request = require('request');
 var fs = require('fs');
 var exec =require('child_process').exec;
 var pythonShell = require("python-shell");
+var pyShell = new pythonShell('controlLED.py');
 
 var app = express();
 var port = 5000;
@@ -36,6 +37,19 @@ app.get('/', function(req,res) {
 
 app.listen(port,function() {
 	console.log("create Server");
+	
+/*
+	pythonShell.run('controlLED.py', pythonOptions, function(err, results) {
+		if(err) throw err;
+		console.log("Run controlLED.py");
+	});
+*/
+/*
+	pythonShell.run('default.py', pythonOptions, function(err, results){
+		if(err) throw err;
+		console.log("Run default.py");
+	 });
+*/
 	//1초마다 smartLamp 함수 호출
 	setInterval(smartLamp,1000);
 });
@@ -45,15 +59,16 @@ function smartLamp() {
 	request(optionsSmartLamp, function(error, response, body) {
 		if(body == "empty" ) {
 			console.log("no data");
-			console.log("R : " + defaultColor[0]);
-			console.log("G : " + defaultColor[1]);
-			console.log("B : " + defaultColor[2]);
+			pyShell.send("END");
 		}
 		else {
+			console.log(body);
+/*
 			newColor = body.split(',');
 			console.log("R : " + newColor[0]);
 			console.log("G : " + newColor[1]);
 			console.log("B : " + newColor[2]);
+*/
 
 			work = exec('chromium-browser http://218.150.183.150:3000/tts1.mp3', optionsChrome,function(err, stdout, stderr) {
 				if(err) {
@@ -63,13 +78,28 @@ function smartLamp() {
 			});
 			console.log(work.pid);
 			work.kill('SIGKILL');
-			facebook();
+			pyShell.send(body);
+			//facebook();	//RGB LED 제어 함수 실행 - facebook
 		}
 	});
 }
 
+//facebook 색으로 RGB LED 불을 켜는 함수
 function facebook() {
 	pythonShell.run('facebook.py', pythonOptions, function(err, results) {
 		if(err) throw err;
+		console.log("Run facebook.py");
 	});
 }	
+
+pyShell.end(function(err) {
+	if(err) throw err;
+	console.log("End of phShell");
+});
+
+process.on('SIGINT', function() {
+	console.log(" Interrupt");
+	pyShell.send("END");
+	//setTimeout(function() {process.exit();},1000);
+	process.exit();
+});

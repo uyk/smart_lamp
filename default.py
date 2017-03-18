@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 #
-# facebook.py
+# default.py
 #
 #   
  
@@ -17,8 +17,8 @@ green = 18
 blue = 27
 
 #Color - facebook
-R = 78
-G = 67
+R = 0
+G = 0
 B = 0
 
 # Set pins to output mode
@@ -42,4 +42,4 @@ BLUE.start(B)
 #GREEN.ChangeDutyCycle(G)
 #BLUE.ChangeDutyCycle(B)
 
-print "facebook.py"
+print "default.py"
