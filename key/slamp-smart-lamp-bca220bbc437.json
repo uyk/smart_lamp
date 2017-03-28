@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "slamp-smart-lamp",
+  "private_key_id": "bca220bbc43747d09dd8d66c66fb876b9b35f045",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCZioK8h9EmOUK+\n4L9z4o2B93c+UmWH8WSNEMBLzlV2aWH9d7Tgzpu8eq6PP8ERoVuWyhguJ6Y98JjE\n9NsgdPUtSlhj+C18aePx6HL0gu0tPsA3fdXdEi9xh96RbABSg7joDUd4Mng87HQo\nCxrx8vtctOOnc+Sfka+TDlWSqrsa4oQicDCniZwELqEnqIL4u1nBCcxxuaeLe65+\nNTOm5EF+yN39aD2Q6fMq/qnKItcg4etUmDgoUjlCirGl7zenEJuRs62RGMpRGwpA\nP2O/KBFie8S/eJNN8DzFgTwi6Dc4QZJip8VBCU6nZWVBr9j+LWxDjItP/neZLPxt\nqp37M6MhAgMBAAECggEAUmdhNRfbax1OMi1i8yoC8l7DE6KbNTOb2I3F9qlderii\nS6vEWubn9GcPang4AWNNSYdbJOJIuXN4OjSDqk67CzycZcLbfqtCGCG+GHZwHllQ\nRjf14LkS12apT/jbz208fuYpllvX5jKtQJR9OJ9EwoOers9nQzCoP09xI88XrhxR\nH+lQYfygDT5rvziigTQmpCCEGzh3OIXKFSlLR7VdJ46QC8gE6KAh4vWOjFUJ+ey2\nihFSw3DxywPOVEjRL/NIaP17Dm9TJk+6BqwA4pHrJcC+9ZpnUbDo1lgia3S3SN87\ncOryAbZU9FP+TAs+ZJxTOLDKBYOzhToVd437zh5icQKBgQDJ5c1luW1sJHxTFZ1D\nQGagnVWTNTM4sP5ASxsC+O0Ks6ome2nPmP4fNCnZU8W01EWFq3A0Isky1DhATZqo\nbHpTWDuT+irEc0+eOMISMzUcwCfY4+pPtDNkFkimnPNbpaS0NzbBW7fiV550Q38O\nTXBOI0mjeLEWDRMNFbTGDhh6hQKBgQDCr3DW6lFrl+KgL94gGNJvb/FycEbrVaGx\noi5epF5BCrhMoW2saz7n+pdJfKXivs12z2AvBC0kXBIqXcX+7GohGCR+YVY449Yl\n07nZIy3gJeYK8rK242ZY3kLN9lcB8muxfK+5xqURXyJ9nex5b7dkEC0b85Z6E2D8\n71EYpsY+7QKBgE5fRjwWnsM75obZ/RH+DdiLOozKOffnvMp4XSPqPRnKZGJLxecw\nHHVAan5SZoyrWdFpm0ShvDhe6PcNKNv4QAPaXEY09iUMHfvtTGiEODnQ3abz0iDe\ncpSHkewbQNxykFzkkfy8/cR+/qNjEA8dQFsUl6E9WICW0q5hnqrDDf2BAoGBALNK\npO2X36Hpv9DsJHGEyo/MFRziH73tH7sac/+++fqGZ9JSvFEUd1tmYVtRCuh19Xyc\nYKUMAJLCpAwWThiGGvsdY8Zr198OnBI8GaTKDB6oaGHevw1FAOWI0xcg7WIiomFT\nRfYd5bjI11e+T6BKbSce6pwaSZNlM2Xc899y/5HFAoGBAMPdKqO70wVfMLGhvTY5\no55H4Lq8WO9+AEdrIzuiFSZBLd1+L1IFkbhfnOgrNwv72JkaldR20PD00ErjMtDE\nW+qEJNVHE5H9AIpaqZAlUwHFLXhjLVGVirJpGCrUXOV6yNZFacree8SXE1Gr7pPk\nYYstKB6uyW/zmodN7eTkwZs6\n-----END PRIVATE KEY-----\n",
+  "client_email": "raspberrypi@slamp-smart-lamp.iam.gserviceaccount.com",
+  "client_id": "105480335080151486762",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://accounts.google.com/o/oauth2/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/raspberrypi%40slamp-smart-lamp.iam.gserviceaccount.com"
+}

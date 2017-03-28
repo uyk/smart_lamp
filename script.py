@@ -5,8 +5,9 @@ def read_in() :
 	return lines
 
 def main() :
-	line = read_in()
-	print line
+        while 1 :
+                line = read_in()
+                print line
 """
 	total_sum_inArray = 0
 
